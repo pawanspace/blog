@@ -1,4 +1,9 @@
 Blog::Application.routes.draw do
+  resources :blog_entries
+
+  get "home/home"
+  get "blog_entries/new"
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
