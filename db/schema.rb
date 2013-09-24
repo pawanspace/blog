@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(:version => 20130923191527) do
 
   create_table "blog_entries", :force => true do |t|
     t.string   "title"
-    t.string   "html"
+    t.text     "html"
     t.datetime "time"
     t.datetime "created_at"
     t.datetime "updated_at"
