@@ -1,0 +1,47 @@
+<div class="navbar-wrapper fixed-navbar">
+      <div class="container">
+		
+        <div class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <span class="navbar-brand name-title">Pawan Chopra</span>
+            </div>
+            <div class="navbar-collapse in" style="height: auto;">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#about">Projects</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+     <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide">
+     
+      <div id="blog-entries-carousel" class="carousel-inner">
+       
+       
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div><!-- /.carousel -->
+
+<script type="text/template" id="blog-item">
+  <div class="item {{active_class}}">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>{{title}}</h1>
+              <p><a class="btn btn-large btn-primary" href="{{link}}">Read more..</a></p>
+            </div>
+          </div>
+        </div>
+</script>

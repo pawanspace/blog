@@ -4,13 +4,26 @@
   <title>Blog</title>
   <%= stylesheet_link_tag :all %>
   <%= stylesheet_link_tag "/bootstrap/css/bootstrap.css" %>
-  <%= javascript_include_tag :defaults %>
-  <%= javascript_include_tag "/javascripts/ckeditor/ckeditor.js" %>
+  <%= stylesheet_link_tag "/bootstrap/css/bootstrap-theme.css" %>
+  <%= stylesheet_link_tag "/stylesheets/carousel.css" %>
   <%= csrf_meta_tag %>
+  <style type="text/css">
+
+
+  </style>
 </head>
 <body>
-<div class="body">
-	<%= yield %>
+<div>
+	<%= render "layouts/header" %>
+	<div class="container body-blog">
+		<%= yield %>
+	</div>
 </div>
+  <%= javascript_include_tag "/javascripts/ckeditor/ckeditor.js" %>
+  <%= javascript_include_tag "/javascripts/jquery.js" %>
+  <%= javascript_include_tag "/javascripts/underscore.js" %>
+  <%= javascript_include_tag "/javascripts/header.js" %>
+  <%= javascript_include_tag "/bootstrap/js/bootstrap.js" %>
+  <%= javascript_include_tag :defaults %>
 </body>
 </html>

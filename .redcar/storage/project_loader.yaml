@@ -1,0 +1,7 @@
+--- 
+open_files: 
+  - app/controllers/application_controller.rb
+  - app/controllers/blog_entries_controller.rb
+  - app/controllers/home_controller.rb
+  - test/functional/blog_entries_controller_test.rb
+  - app/models/blog_entry.rb

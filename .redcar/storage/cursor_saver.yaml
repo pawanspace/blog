@@ -1,0 +1,18 @@
+--- 
+cursor_positions: 
+  - :path: app/controllers/application_controller.rb
+    :cursor_offset: 0
+    :timestamp: 2013-09-23 23:16:17 -05:00
+  - :path: app/controllers/blog_entries_controller.rb
+    :cursor_offset: 0
+    :timestamp: 2013-09-23 23:16:17 -05:00
+  - :path: app/controllers/home_controller.rb
+    :cursor_offset: 0
+    :timestamp: 2013-09-23 23:16:17 -05:00
+  - :path: test/functional/blog_entries_controller_test.rb
+    :cursor_offset: 0
+    :timestamp: 2013-09-23 23:16:17 -05:00
+  - :path: app/models/blog_entry.rb
+    :cursor_offset: 0
+    :timestamp: 2013-09-23 23:16:17 -05:00
+files_to_retain: 0
