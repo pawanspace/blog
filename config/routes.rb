@@ -3,7 +3,7 @@ Blog::Application.routes.draw do
 
   get "home/home"
   get "blog_entries/new"
-  
+  root :to => "blog_entries#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

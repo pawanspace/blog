@@ -36,7 +36,7 @@ body {
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 300px;
+  height: 320px;
   background: none repeat scroll 0 0 #FAC552;
 }
 .carousel-inner > .item > img {

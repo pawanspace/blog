@@ -1,6 +1,7 @@
 <div class=" alert alert-warning"> <h1> <%= @blog_entry.title %></h1></div>
-
+<pre>
   <%= @blog_entry.html.html_safe %>
+ </pre> 
 <div class=" alert alert-info">  <%= @blog_entry.time %></div>
 
 <%= link_to 'Edit', edit_blog_entry_path(@blog_entry) %> |

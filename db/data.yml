@@ -1,0 +1,580 @@
+
+--- 
+blog_entries: 
+  columns: 
+  - id
+  - title
+  - html
+  - time
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - Agile and TDD It may not be what you think
+    - "<p>I am an <strong>Agile developer</strong>. I have had many many discussions with people who are not working on Agile and TDD or are new in Agile and TDD. Also People who hate Agile and TDD.</p>\r\n\
+      \r\n\
+      <p>The most important thing that has occurred to me is that people (including me sometimes) has their own theory of Agile and TDD and have their own concepts. Very few people have put a good amount of effort to understand what is Agile and how it can help you to have a good product on Time!</p>\r\n\
+      \r\n\
+      <p>&nbsp;</p>\r\n\
+      \r\n\
+      <p>First of all if you are really interested in working in Agile or want to have detail knowledge of Agile and TDD I would recommend few books by some great people:</p>\r\n\
+      \r\n\
+      <ul>\r\n\
+      \t<li><a href=\"http://www.amazon.com/Extreme-Programming-Explained-Embrace-Edition/dp/0321278658/ref=pd_rhf_ee_s_cp_5_PPSV?ie=UTF8&amp;refRID=171E500DX7X99GV9PPSV\" onclick=\"return mugicPopWin(this,event);\" target=\"_blank\">Extreme Programming Explained</a></li>\r\n\
+      \t<li><a href=\"http://www.amazon.com/Test-Driven-Development-By-Example/dp/0321146530/ref=cm_lmf_tit_15\" onclick=\"return mugicPopWin(this,event);\" target=\"_blank\">Test Driven Development By-Example</a></li>\r\n\
+      \t<li><a href=\"http://www.amazon.com/Refactoring-Patterns-Joshua-Kerievsky/dp/0321213351/ref=cm_lmf_tit_10\" onclick=\"return mugicPopWin(this,event);\" target=\"_blank\">Refactoring Patterns By Joshua Kerievsky</a></li>\r\n\
+      \t<li><a href=\"http://www.amazon.com/Practices-Agile-Developer-Pragmatic-Bookshelf/dp/097451408X/ref=cm_srch_res_rpli_4\" onclick=\"return mugicPopWin(this,event);\" target=\"_blank\">Practices Agile Developer Pragmatic Bookshelf</a></li>\r\n\
+      </ul>\r\n\
+      \r\n\
+      <p>When I started working on Agile and TDD. I hated it. I was like why the hell I should have discussions and why the hell I should write Test case. I am not a tester. If my company can&rsquo;t trust my decisions and need a team discussion or a pair discussion I can&rsquo;t work for them. They have to trust my knowledge and experience.</p>\r\n\
+      \r\n\
+      <p>I have seen similar kind of thoughts in other&rsquo;s minds as well. Even if It hurts our ego or respect all of them are true. No body is perfect and nobody knows everything. Single person can not invent everything. If you want to work in Agile you have to accept it and you have to be ready for open discussions, &nbsp;arguments. All this is acceptable if we can produce a good product after all this. But if we do not discuss and keep faith in the heart that whatever I am doing is the best. Most of times We are wrong!</p>\r\n\
+      \r\n\
+      <p>Let&rsquo;s go through them one by one and see the advantages of these things and some best practices that I have learnt:</p>\r\n\
+      \r\n\
+      <p><strong>Open discussions</strong></p>\r\n\
+      \r\n\
+      <p>In one of my company we had a Guy who will call a team meeting for every design decision he has to take.&nbsp;We were really irritated by all this. Can you imagine you are working through some concept of ThreadLocal class of Java and somebody says, &ldquo;Hey!! can we have a meeting on Where to display this button on the Settings page!&rdquo;. I know it sounds crap. But actually it&rsquo;s not. We have realized it many times. Suppose somebody else is also planning to put some other link or search box or any button at the same place and what if he has already got approval from the business team (The best part is no body else knows about it.). If team will not discuss about each and every single feature they will be repeating things and changing stuff all the time. In some cases may be fighting on the places!! So discussion is very important.</p>\r\n\
+      \r\n\
+      <h3>Best Practices I have used:</h3>\r\n\
+      \r\n\
+      <ul>\r\n\
+      \t<li><strong>Blow the whistle:</strong> Imagine you have release in a week( or like Facebook who pushes a<a href=\"https://www.facebook.com/photo.php?v=778890205865&amp;set=vb.9445547199&amp;type=3&amp;theater\" target=\"_blank\"> production release every day</a>!) and you are stuck in a problem. You are trying hard but not able to find a solution. In Agile world you should blow the whistle. Which means you should immediately gather your team and discuss your problem. If they will not be able to find the solution at least they will be able to suggest something. Do not stop yourself thinking that problem is very small and teammates will see you as a Fool. Problem may be small but the solution you will write may have big impacts. So blow the whistle in bad times.</li>\r\n\
+      \t<li>&nbsp;<strong>Tech Hurdle: &nbsp;</strong>This meeting belongs to all the developers. You don&rsquo;t need any&nbsp;business people or any tester in this. Because here you will talk any issue you are facing related to programming language or pattern team is using or coding conventions etc. This is very important part as you can solve your problems in quick time. It may look like first point but this is just for technical issues nothing else.</li>\r\n\
+      \t<li><strong>Retrospective: </strong>This is the best part of Open culture. Weekly you should have retrospectives within your team or company level in case company has small number of people. Here team look at what went well in the week, what was bad and issues team saw in that week and what are the plans and solutions for next week. This is fun and&nbsp;off-course&nbsp;useful to decide things on priority for next week.</li>\r\n\
+      \t<li><strong>&nbsp;Business people are not Stupid:</strong> There is one most important thing related to Open discussions. Do not assume that business people are stupid and won&rsquo;t understand technical things. If you can make them part of your discussion. It will help you in two ways. First one is people will try to simplify things while explaining as they will think business people will not understand technical thing and technical people will actually understand how this piece of code will be used in real world.</li>\r\n\
+      \t<li><strong>Stand Up on Story board:</strong> This is time taking but very helpful during initial days(or during whole release) of your project. Having a stand up or status update in front of Story board helps you not to miss anything you are doing! Generally in normal stand-up people tend to forget some issues of features they have worked on. Also it will help team understand whether they are working on the priority things or not. Having a big picture of things undergoing in the project helps everybody.</li>\r\n\
+      </ul>\r\n\
+      \r\n\
+      <p><strong>Writing Test case</strong></p>\r\n\
+      \r\n\
+      <p>Don&rsquo;t remember how many arguments I had about this. People think it takes time to write test case which is actually a wastage. They feel instead of writing test cases why not hire good developer who can write bug less code. But we all know it&rsquo;s not possible and it will never be(Even with TDD!!). But from my experience I can tell you that practicing TDD will reduce number of bugs and also will improve your code quality if you go through the process of &ldquo;<a href=\"http://www.jamesshore.com/Blog/Red-Green-Refactor.html\" target=\"_blank\">Red Green Re-facto</a>r&rdquo;. Now one big misconception is you have to write test for every single method you write. It&rsquo;s not true. You have to write a test only for features that you feel are complex and probability of bugs is more.</p>\r\n\
+      \r\n\
+      <p>I hope you all know <a href=\"https://www.facebook.com/kentlbeck?fref=ts\" target=\"_blank\">Kent Beck</a>. A great author of so many great books and JUnit framework. Read what he says in one of his comment on <a href=\"//stackoverflow.com/questions/153234/how-deep-are-your-unit-tests/#answer-153565\" target=\"_blank\">StackOverFlow&nbsp;</a></p>\r\n\
+      \r\n\
+      <blockquote>\r\n\
+      <p>I get paid for code that works, not for tests, so my philosophy is to test as little as possible to reach a given level of confidence (I suspect this level of confidence is high compared to industry standards, but that could just be hubris). If I don&rsquo;t typically make a kind of mistake (like setting the wrong variables in a constructor), I don&rsquo;t test for it. I do tend to make sense of test errors, so I&rsquo;m extra careful when I have logic with complicated conditionals. When coding on a team, I modify my strategy to carefully test code that we, collectively, tend to get wrong.</p>\r\n\
+      \r\n\
+      <p>Different people will have different testing strategies based on this philosophy, but that seems reasonable to me given the immature state of understanding of how tests can best fit into the inner loop of coding. Ten or twenty years from now we&rsquo;ll likely have a more universal theory of which tests to write, which tests not to write, and how to tell the difference. In the meantime, experimentation seems in order.&rdquo;</p>\r\n\
+      \r\n\
+      <p>Writing Unit tests, Integration tests and even testing the JavaScript with Jasmin.js or testing webpages flow with tools like Selenium is very important and helps you in long term.</p>\r\n\
+      </blockquote>\r\n\
+      \r\n\
+      <p>Another advantage is New Joiner is not a problem anymore. If you have tests for your product. You are not worried that some new joiner will do something unexpected in the code and break some feature before going to production. Also Unit tests help new joiner to understand the feature in better and simple way.</p>\r\n\
+      \r\n\
+      <h3>Best Practices I have used:</h3>\r\n\
+      \r\n\
+      <p><strong>&nbsp;</strong></p>\r\n\
+      \r\n\
+      <p>\xE2\x80\x8B<strong>Pair Programming:&nbsp;</strong></p>\r\n\
+      \r\n\
+      <p>Pairing it self is a big topic but we will not go into depth of this. Generally in TDD one developer writes the test and other one writes the implementation. This is a good practice. This is very very hard thing to do in most of the companies. Because business will think they are paying double for one feature. But this is not completely true and you don&rsquo;t have to program in pair all the time. &nbsp;I will suggest when you are implementing a new feature and trying to decide what domain objects or what interfaces you want to have It will be great if you have a pair. &nbsp;Another important part is in Pair programming you rotate pairs so that everybody gets a chance to pair with each other. I like rotating weekly but some teams rotate after feature is done or similar to this. &nbsp;I will be writing another blog entry on Pair Programming. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>\r\n\
+      \r\n\
+      <p>&nbsp;&nbsp;&nbsp;Pair Programming helps in couple of things: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>\r\n\
+      \r\n\
+      <ol>\r\n\
+      \t<li>&nbsp;By rotating pair you create a great relationship between team members and new people learn more.</li>\r\n\
+      \t<li>&nbsp;You are not alone anymore to take a blame <img alt=\":P\" src=\"http://s2.wp.com/wp-includes/images/smilies/icon_razz.gif?m=1129645325g\" /> (We will talk about blames and credits later)</li>\r\n\
+      \t<li>&nbsp;You exchange knowledge of programming languages when you tell each other different ways to do some logic.</li>\r\n\
+      \t<li>Every single line of code you write is reviewed automatically</li>\r\n\
+      \t<li>&nbsp;You share different ideas.</li>\r\n\
+      \t<li><strong>Use Some great tools:</strong> This is open source world and some great tools are available in the market for testing and analysis. Use them but before that review them for sure. We will talk more about tools.</li>\r\n\
+      </ol>\r\n\
+      \r\n\
+      <p><strong>&nbsp;Defining cost</strong></p>\r\n\
+      \r\n\
+      <p>This is most useful thing to do for both developers and business people. Before Agile, developers were not involved in product cost and all those discussions. Some manager will come and tell them &ldquo;Hey do this in 5 hours!&rdquo;. Then developers will curse him while having coffee and think why the hell they are doing programming. It&rsquo;s fun to sell Starbucks coffee <img alt=\";)\" src=\"http://s1.wp.com/wp-includes/images/smilies/icon_wink.gif?m=1129645325g\" /> .</p>\r\n\
+      \r\n\
+      <p>But in Agile, &nbsp;developers are involved in the discussions related to cost of a feature and number hours it will take. They get a chance to explain business people reason behind that. This kind of communication improves relationship between business people and developers.</p>\r\n\
+      \r\n\
+      <p><strong>Best Practices:</strong></p>\r\n\
+      \r\n\
+      <p>Generally tools like <a href=\"http://www.atlassian.com/software/jira\" target=\"_blank\">Jira </a>have feature to define number of hours to each story or bug. Business can allocate for example 200 hours to a release and then developers have to estimate different stories and bugs they can do in that release. By doing this both have clear idea that what is going on and what customer should expect out of this release.</p>\r\n\
+      \r\n\
+      <p><strong>More on Agile&hellip;&hellip;</strong></p>\r\n\
+      \r\n\
+      <p>These things may sound silly in the beginning but at the end you will see that there is a lot of value in all this. There are some more best practices you can follow</p>\r\n\
+      \r\n\
+      <ul>\r\n\
+      \t<li>&nbsp;There is no <strong>&ldquo;I&rdquo;</strong> in Agile. So many people who like to create dependency in the projects and try to be <strong>&ldquo;God Father&rdquo;</strong>&nbsp;(<a href=\"http://en.wikipedia.org/wiki/Information_wants_to_be_free\" target=\"_blank\">Read More on this..</a>) will never like this approach. But it&rsquo;s true and good for the team. You keep sharing your knowledge. Credit is for team and Blame is for team not for an individual.</li>\r\n\
+      \t<li>&nbsp;Show demo to customer on weekly basis. When I say customer that means actual users. If it&rsquo;s not possible try to find some of them. I am sure they will be very happy.</li>\r\n\
+      \t<li>&nbsp;User testing is very important hire some common people for 1 hour and ask him to use your tool. Do not explain him any feature or anything. It will be great if you can find someone who has used similar tool in the past.</li>\r\n\
+      \t<li>&nbsp;Continues integration is very important. Ask your programmer to commit frequently so that you know st very early stage is something is going wrong to breaking any feature.</li>\r\n\
+      \t<li>Use great tools like <a href=\"http://jenkins-ci.org/\" target=\"_blank\">Jenkins </a>for continues integration, <a href=\"http://www.atlassian.com/software/jira\" target=\"_blank\">Jira </a>for project tracking etc. Bugzilla for bug tracking.</li>\r\n\
+      </ul>\r\n\
+      \r\n\
+      <p>There is so much in Agile that can help you to create a great product on time and keep your customers happy. I will add more in upcoming blogs and may be I will try to go in depth of each of these topics. I welcome any suggestions or if anyone has anything to add. I believe I have done my best to explain things. But I would love to hear opinions. Thanks and keep an eye on blog for more stuff on Agile.</p>\r\n\
+      \r\n\
+      <h3>&nbsp;</h3>\r\n"
+    - 2013-09-24 04:22:00.000000
+    - 2013-09-24 04:22:01.686637
+    - 2013-09-24 04:59:06.029162
+  - - 6
+    - Why I will never buy a PC(Windows) again?
+    - |
+      <p>I remember the day Apple or I should say Steve Jobs launched Ipod touch within Iphone. He said you can touch your music with your hands. &nbsp;I loved it and I am sure most of the people actually felt it.</p>
+      
+      <p>&nbsp;</p>
+      
+      <p>Having lived in the PC world for about 10 years. Last year I moved to Mac world. It really like from hell to heaven. People talk about windows being friendly but as they say:</p>
+      
+      <blockquote>
+      <p>Once you Mac you never go Back!</p>
+      </blockquote>
+      
+      <p>But more than using Mac I am in love with its OS which is built on top of Unix. &nbsp;Unix is a great reason behind success of Macintosh OS. In case you wanna know more about it you can use see this link<br />
+      <a href="http://www.wired.com/wiredenterprise/2011/10/thedennisritchieeffect/" target="_blank">http://www.wired.com/wiredenterprise/2011/10/thedennisritchieeffect/</a>.</p>
+      
+      <p>Mac is just a combination of beautiful hardware and software that does not require any special antivirus to protect your system. Using mouse pad in Mac may feel weird&nbsp;in the&nbsp;beginning. But once you get use to it. You will love the scrolling part. Which is amazing in both horizontal and vertical sides.</p>
+      
+      <p>Mac has awesome unix console which is just amazing for programmers. &nbsp;You don&rsquo;t have be frustrated with things like copy and paste in windows console. It has amazing functions to sort , find, grep and&nbsp;off-course&nbsp;my&nbsp;favourite&nbsp;<strong>rlink</strong>&nbsp;to remotely sych your complete system.</p>
+      
+      <p>I agree that things are not bad with Windows. PCs are also getting stronger. But Unix was built from heart and someone has put real thought in it. No body was building it just to sell. It is open source OS. Apple&rsquo;s decision was the best to use Unix to build Macintosh.</p>
+      
+      <p>Mac has superb performance. I run heavy tools with Windows and Ubuntu on VMWare and they all run perfectly. Mac&rsquo;s hardware is awesome which gives you flexibility to install unix or windows in parallel.</p>
+      
+      <p>Last but not the least&hellip;..Its really Cool!!</p>
+
+    - 2013-10-06 04:19:00.000000
+    - 2013-10-06 04:23:35.201869
+    - 2013-10-06 04:23:35.201869
+  - - 7
+    - Meanings of Success.
+    - |
+      <p>Success has a number of meanings in this world. For some people its just money, others think it in the form of fame and their are very&nbsp;few of them who feel that success is being happy and satisfied.</p>
+      
+      <p>&nbsp;</p>
+      
+      <p>I have been in professional life from more than 5 years now. I couldn&rsquo;t figure out that what I wanna achieve? Its like an end less Journey. Learning new things everyday and still keep the feeling that there is much more to come. So eventually always be unsatisfied. Most of the people will argue that It has to be like this. If you will be satisfied then u will not reach to the next level. But my question is are we satisfied at this level? did we achieve everything that was required to be satisfied at &ldquo;this level&rdquo;?</p>
+      
+      <p>&nbsp;</p>
+      
+      <p>I don&rsquo;t think so. Personally I feel we are time driven. I have 5 year experience so Industry has assumption that I have capability to perform all the actions that a 5 year experienced professional can do. But The main question is what is the minimum bar that one should have crossed. Everyone has his/her own opinion on this.</p>
+      
+      <p>I decided to write my opinion through this article. I am sure a lot of people will have different opinion. I have realized that success is big word. Its not just money or fame. All these things are complementary with&nbsp;success.</p>
+      
+      <p>So to explain&nbsp;success&nbsp;I will give you one example:</p>
+      
+      <p>One day a boy hired a cycle rickshaw. It was hot day and rickshaw driver was sweating a lot. The boy started conversation with the driver.</p>
+      
+      <blockquote>
+      <p><strong>Boy:</strong> Is this your own Rickshaw or did U rent it?</p>
+      
+      <p><strong>Rickshaw Driver:</strong> This is my own rickshaw.</p>
+      
+      <p><strong>Boy:</strong> Good!</p>
+      
+      <p><strong>Rickshaw Driver:</strong> But you know when I came to live at this place. I had nothing in my pocket.</p>
+      
+      <p><strong>Boy:</strong> Then how did u get this rickshaw?</p>
+      
+      <p><strong>Rickshaw Driver:</strong> Its a long story. U wanna listen?</p>
+      
+      <p><strong>Boy:</strong> sure</p>
+      
+      <p><strong>Rickshaw Driver:</strong> When I started driving rickshaw. I used to earn 100 bucks a day. I used to spend all that on my food and house rent.I was not able to save anything. Because rickshaw was on rent. I wanted to get rid of that rent thing.</p>
+      
+      <p>I made a goal. A very very small goal! I used to drive rickshaw for 9 hoours. I started driving rickshaw for 13 hours and whatever money I was getting for those extra 4 hours I started saving. So now I was able to save some amount of money every day.</p>
+      
+      <p>After 3 yeears so after more than 1000 days I was able to buy an old rickshaw.</p>
+      
+      <p>I was happy!!!</p>
+      
+      <p><strong>Boy:</strong> OK! But you said it is a long story.</p>
+      
+      <p><strong>Rickshaw Driver:</strong> Yes I am not finished yet. It was the begining. After I got my own rickshaw. I was able to get rid of paying rent everyday. I got more savings and because It was my rickshaw. I used to drive it as much as I want. so some days like festivals I used to drive it almost 24 hours.</p>
+      
+      <p>After 2 more years I got another rickshaw and made it available for rent. But as u know nothing is easy as it looks. I had to pay a lot of money for their maintaince. Which was expensive. I decided to save that money. I made another small goal. I started working in a shop of reparing rickshaws at day time. So that I can learn repairing and maintaining rickshaw.</p>
+      
+      <p>I was happy!!!</p>
+      
+      <p>I was earning good money from my rickshaws. Because I gave them on rent. I used to earn money from shop I was learning a lot of good stuff.<br />
+      After 3 years I had enough money. So I rented a shop and started repairing rickshaw. Now I could do everything the way I wanted to do.<br />
+      I was happy!!!</p>
+      
+      <p>Are your listening???</p>
+      
+      <p><strong>Boy:</strong> yes, go ahead I am loving it!</p>
+      
+      <p><strong>Rickshaw Driver:</strong> Great! Now its almost 12 years. I have my own shop in this city. I have more than 10 rickshaws. I have own home and my family lives with me. I am a very satisfied and happy person now. did u like my story???</p>
+      
+      <p><strong>Boy:</strong> Yes, But I am thinking how can u make this story? Don&rsquo;t u think u can lie very well!</p>
+      
+      <p><strong>Rickshaw Driver:</strong> I am not lying. This is a true story!</p>
+      
+      <p><strong>Boy:</strong> Hahahaha. You mean to say that You have a house, shop and 10 rickshaws and still U r driving a rickshaw and sweating in such a hot day!</p>
+      
+      <p><strong>Rickshaw Driver( with a Smile on his face):</strong> You know boy. We should never miss any opportunity in life. I am driving this rickshaw becuase one of the driver is sick today and this rickshaw was parked useless. Whatever money I get from these rickshaws I save it for my next goal. If today I will not drive this rickshaw then there will be a gap in the savings and its impossible to fill that gap. I dont wanna miss it. Because I wanna achieve my next goal!!</p>
+      </blockquote>
+      
+      <p>I hope my readers are still awake! Now let us see what we can learn from this story?</p>
+      
+      <ul>
+      	<li>First thing is settings small number of goals</li>
+      	<li>Second thing is you have to pur effort each day to achieve that goal. If you miss one day then its hard to fill that gap.</li>
+      	<li>Last but most important thing is. As I said earlier. Money , fame ad all other things are complementary with success. As you see Rickshaw driver was able to earn money, he got fame and also he was able to do some great stuff like learning repair of rickshaws.</li>
+      </ul>
+      
+      <p>I think thats all we wanna do. We want to earn money, have fame and also we wanna do good work. So we can do this by following some facts that set small goals and focus on those goals. Satisfy yourself at one level and then move to next level. Don&rsquo;t look at others. do not be time driven!</p>
+      
+      <p>Just give your best shot this time. I am sure you guys will have different opinion. Let me know if you liked this article or not.Thanks!</p>
+
+    - 2013-10-06 04:24:00.000000
+    - 2013-10-06 04:24:54.695472
+    - 2013-10-06 04:24:54.695472
+  - - 8
+    - Copying Code or Bugs??
+    - |
+      <p>I have been working on various technologies and frameworks from past 5 years. I have seen copy and paste practice in most of projects specially when a developer is new to the technology or framework or project itself.</p>
+      
+      <p>Last month I started working on project using Grails. There was some amount of code that was already written. I was new to Grails and didn&rsquo;t get time to learn it because of strict dead lines. I started working and for saving time I did copy and paste from the existing code. We did the sprint release and we were happy about that. I was feeling confident that I have managed to complete my work.</p>
+      
+      <p>Client came back to us and asked us to improve the code coverage and write the unit test cases. We started writing unit test cases and we found few bugs. Now those bugs were in the code that was copied by me in a lot of other places as well. So the person who actually wrote that code finally made corrections and checked in the code. Again I did the same thing copied the correction and tried to run the tests. My tests were failing then I realized that there are more scenarios in my case. which needs to be implemented.</p>
+      
+      <p>Then I realized that Instead of copying CODE I was copying bugs. So I decided to study about copy and paste programming. Here are few points that we need to take care while we do copy paste from the existing code:</p>
+      
+      <ul>
+      	<li>Do read comments on the Method from where you are copying the code.</li>
+      	<li>In case comments are not there try to understand the code first. Don&rsquo;t just go by name of the method.</li>
+      	<li>After understanding that what that piece of code does. Look at your requirement and compare if it is the same.</li>
+      	<li>If it is the same then you can copy and paste and write test cases. TDD helps here a lot. If you write your tests before you write the code then instead of doing the above three steps you can simply copy and paste the code and run your tests to check if it works for your requirement or not.</li>
+      	<li>If it doesn&rsquo;t complete your requirement you may need to modify the code.</li>
+      </ul>
+      
+      <p>So the idea is don&rsquo;t just blindly copy and paste the code. Because you never know you are copying the CODE or copying the BUGS!!</p>
+      
+      <p>I hope you will like this post. I will be looking forward for your feedback.</p>
+
+    - 2013-10-06 04:24:00.000000
+    - 2013-10-06 04:26:03.039367
+    - 2013-10-06 04:26:03.039367
+  - - 9
+    - Back to basics
+    - |
+      <p>I was reading a wonderful book <a href="http://www.amazon.com/Programming-Ground-Up-Jonathan-Bartlett/dp/0975283847" onclick="return mugicPopWin(this,event);" target="_blank">Programming from Ground up</a>&nbsp;by <a href="http://www.amazon.com/Jonathan-Bartlett/e/B001K8V8RU/ref=ntt_athr_dp_pel_1" onclick="return mugicPopWin(this,event);" target="_blank">Jonathan</a>. It reminds me old good days about assembly language on <a href="http://www.dynalogindia.com/index.php?page=shop.product_details&amp;flypage=flypage.tpl&amp;product_id=219&amp;category_id=20&amp;option=com_virtuemart&amp;Itemid=20&amp;vmcchk=1&amp;Itemid=99" target="_blank">Dyna Microprocessor kits</a>.&nbsp; I thought about writing&nbsp;some points from that.</p>
+      
+      <p>Let us start reading about the Computer Architecture:</p>
+      
+      <p><br />
+      Have you every thought when you type something on the keyboard how does computer display that on the Screen? I know I know we don&rsquo;t need to bother about that but I believe anyone who is a programmer must know these concepts.</p>
+      
+      <p>So if we will look at architecture of Computer there are 3 main components:</p>
+      
+      <ul>
+      	<li>Hardware</li>
+      	<li>Kernel</li>
+      	<li>User Application</li>
+      </ul>
+      
+      <p>Let us go through each point one by one I will discuss the most important one at the end <img alt=";)" src="http://s1.wp.com/wp-includes/images/smilies/icon_wink.gif?m=1129645325g" /></p>
+      
+      <h2>Hardware</h2>
+      
+      <p>Hardware includes everything that is physically available in the computer. For example Motherboard ,RAM, Processor, Keyboard, Mouse etc. Few of them require human interactions for example keyboard or mouse. But some of them for example microprocessor(most important IC(Integrated Circuits) on the motherboard ) need commands that will be executed by such kind of hardware. These command are written in Machine Language. I will explain about that later.</p>
+      
+      <h2>User Application</h2>
+      
+      <p>This represents any program written by User in any high level or low level language. For example if we take any editor that is used to write such blogs or for example music player on our computer where MJ rocks every time we play &ldquo;Don&rsquo;t Stop Till You Get Enough&rdquo; <img alt=":)" src="http://s0.wp.com/wp-includes/images/smilies/icon_smile.gif?m=1129645325g" /></p>
+      
+      <h2>Kernel</h2>
+      
+      <p>As I said earlier and I know you are smart enough to identify that Kernel is the most important part we should discuss here. have you ever written any code so that your music player will interact with the underlying hardware driver and play sound for your favorite song? I have never done that. Then who is doing that for me? Have you ever thought what the hell is Operating System? If yes then you know the answer of my previous question and if No then let me tell you OS is doing that for us. That is the reason today Bill Gates is a big Man with big big pocket! OS has Kernel to interact with hardware. Each OS expose some kind of entry point or we should say functions to interact with the Kernel. User applications use that entrypoint and using kernel interact with the hardware. So when we press a key a&nbsp;scancode&nbsp;goes to kernel. Then kernel converts that to actual letterand then pass to the OS and then OS will display that in the desired application for example editor. kernel also handle security issues like handling the permission of memory or file access for a particular program.</p>
+      
+      <p>I hope you enjoyed reading this stuff do leave a feedback on that. &nbsp;I will be looking forward for any kind of suggestions.</p>
+      
+      <blockquote>
+      <p>In windows we have everything which is executable with an extension &ldquo;exe&rdquo;. But in Linux everything that is executable does not have any extension.</p>
+      </blockquote>
+
+    - 2013-10-06 04:26:00.000000
+    - 2013-10-06 04:27:05.900843
+    - 2013-10-06 05:16:00.276448
+  - - 10
+    - Introduction to Android
+    - |
+      <p>Couple of days ago one of my Friend told me that he is working on Android. I know its nothing new but why everyone is using android these days?? &nbsp;If you look at your&nbsp;<a href="http://dummiesmind.tiddlyspace.com/#GMail">GMail</a>&nbsp;friend list you will see that there are some icons of Android as status of your friend.I thought I must look in to this because it seems like something special in the programming world. I started learning about Android and here are some cool points on that.</p>
+      
+      <p>What is Android?</p>
+      
+      <p>According to Android Website</p>
+      
+      <blockquote>
+      <p>Android is a software stack for mobile devices that includes an operating system, middleware and key applications. The Android SDK provides the tools and&nbsp;<a href="http://dummiesmind.tiddlyspace.com/#APIs">APIs</a>&nbsp;necessary to begin developing applications on the Android platform using the Java programming language.</p>
+      </blockquote>
+      
+      <p>So basically what I understand is Android is an API for creating applications of Mobile devices or if you make it simple creating applications for&nbsp;Android based operating System. Just like we have API for windows programming on Windows based mobiles. Seems like nothing new? But no Android is much more powerful and have plenty of features for you and off course If you know Java then it is really easy to build Applications in Android.</p>
+      
+      <h2>Features of Android:</h2>
+      
+      <ul>
+      	<li>Application Framework: Android provides a very powerful library for building applications. Most of the core Java classes are accessible to Android developers. It provide features like running services in background threads and localization of text strings etc.</li>
+      </ul>
+      
+      <ul>
+      	<li>Run time Libraries: Android comes with number of third party libraries that can be used for Various Purposes. One example is&nbsp;<a href="http://dummiesmind.tiddlyspace.com/#SQLite">SQLite</a>&nbsp;which is used to fetch data from some source through a Query or some other way.</li>
+      </ul>
+      
+      <ul>
+      	<li>Dalvik VM: Each Application in Android runs in its own Process. Dalvik VM is written in such a way so that a system can initialize multiple&nbsp;<a href="http://dummiesmind.tiddlyspace.com/#VMs">VMs</a>&nbsp;at a single time. Dalvik VM is based on Linux kernel and use linux for Thread and low level memory management.</li>
+      </ul>
+      
+      <h2>Security in Android</h2>
+      
+      <p>As mentioned in the third point of Android Features. Each application runs in its own process and have access to files that are related to that application. This isolation among the application provides great level of Security. It is possible to share same resources among the applications that may run on different Process or may share same Dalvik VM.</p>
+      
+      <p>So this is just an introduction to Android. You will find very good information from the&nbsp;<a href="http://www.android.com/" target="_blank">Android Site</a>. I have taken most of the stuff from their site. Keep watching my blog I will post some tutorials for starters very soon and please give feedback!</p>
+
+    - 2013-10-06 04:27:00.000000
+    - 2013-10-06 04:28:06.008919
+    - 2013-10-06 04:28:06.008919
+  - - 11
+    - Coding guide lines for variable names
+    - |
+      <p>Here are some coding guidelines about using meaningful names in the program. Most of them are taken from from <strong>Clean code</strong> book</p>
+      
+      <p>&nbsp;</p>
+      
+      <p>Choosing good names takes time but saves more than it takes.</p>
+      
+      <h2>Use Intention-Revealing Names</h2>
+      
+      <p>The name of a variable, function, or class, should answer all the big questions. It should tell you why it exists, what it does, and how it is used. If a name requires a comment,then the name does not reveal its intent.</p>
+      
+      <p>for example:</p>
+      
+      <blockquote>
+      <p>int d; /*elapsed time in days*/</p>
+      </blockquote>
+      
+      <p>This will be better if written like below</p>
+      
+      <blockquote>
+      <p>int elapsedTimeInDays</p>
+      
+      <p>&nbsp;</p>
+      </blockquote>
+      
+      <hr />
+      <h2>Avoid Disinformation</h2>
+      
+      <p>For example we have a group of <strong>accounts</strong>. Do not refer it as <strong>accountsList </strong>until it is actually a List. Another example is while working on a web application. We must try to avoid some standard variable names like request, config and context for our own variables. For example let us take a case where we have request to join a Role or a request to create an Account. In this case instead of using request as a variable name we must put context of the request as prefix of that request. so in our case it will be roleRequest, accountRequest.</p>
+      
+      <p>Another point here is to have names which looks similar because they have similar representation. In clean code they have given a good example of that</p>
+      
+      <p><strong>XYZControllerForEfficientHandlingOfStrings</strong> and <strong>XYZControllerForEfficientStorageOfStrings</strong></p>
+      
+      <p>If you look at above two names they look similar. We should try to avoid this.</p>
+      
+      <hr />
+      <h2>Think about other Programmers instead of Compiler</h2>
+      
+      <p>Programmers generally think about the compiler and write programs to satisfy compiler. But we must think about the programmer who will be using/reading/maintaining our code in future. for example as shown in the code below:</p>
+      
+      <blockquote>
+      <p>public void copyCharArray(char array1,char array2){</p>
+      
+      <p>for( ){</p>
+      
+      <p>//do something here</p>
+      
+      <p>}</p>
+      
+      <p>}</p>
+      </blockquote>
+      
+      <p>Compiler will work fine here. But instead of having <strong>array1 </strong>and <strong>array2</strong>. It will be best to use <strong>source </strong>and <strong>destination </strong>in this case.</p>
+      
+      <hr />
+      <h2>Use Pronounceable Names</h2>
+      
+      <p>We must use variables that we can pronounce easily when having a code review or a team meeting. So that will less confusing for other programmers even if the logic is complex. Code clean book gives a good example of this</p>
+      
+      <blockquote>
+      <p>private Date genymdhms; /* Generation year month date hour minute and seconds*/</p>
+      </blockquote>
+      
+      <p>Instead of this we could have</p>
+      
+      <blockquote>
+      <p>private Date generationTimestamp;</p>
+      </blockquote>
+      
+      <hr />
+      <h2>Use Good names for flag/comparison</h2>
+      
+      <p>Here is an example of that.</p>
+      
+      <blockquote>
+      <p>public boolean isVisible(AuthRequest ar, int displayLevel)</p>
+      
+      <blockquote>
+      <p>throws Exception</p>
+      </blockquote>
+      
+      <p>{</p>
+      
+      <p>int visibility = getVisibility();</p>
+      
+      <p><strong>if (visibility != 4) </strong></p>
+      
+      <p>{</p>
+      
+      <p>return true;</p>
+      
+      <p>}<br />
+      return false;</p>
+      </blockquote>
+      
+      <p>}</p>
+      
+      <p>The second if condition is trying to compare visibility with variable 4. Programmer has put this to check whether this is private message or public message. Programmer in future will find it hard to understand what is this comparison for. so instead of having 4. We can use&nbsp;some variable names like final int <strong>PRIVATE_VISIBILITY.</strong></p>
+      
+      <hr />
+      <h2>Pick one word per Concept</h2>
+      
+      <p>We must use one word for one concept that must be used in complete application. For example to get a value we may not use different method names at different places we must use a standard convention that could be either fetch or get or select anything. But every where there that should be same.</p>
+      
+      <hr />
+      <h2>Adding a Context helps</h2>
+      
+      <p>As discussed earlier in <strong>Avoid Disinformation. </strong>Adding a context in the variable name helps to understand variable names.</p>
+      
+      <p>These are few points about having meaning full names for variables or methods. In case any one would like to add more into this or would like to make any correction. Please do it.</p>
+      
+      <p>We should follow these coding guidelines wherever possible.</p>
+      
+      <p><strong>Boy Scout Rule:</strong><em>Leave the campground cleaner than you found it</em></p>
+
+    - 2013-10-06 04:28:00.000000
+    - 2013-10-06 04:28:53.808093
+    - 2013-10-06 04:28:53.808093
+  - - 12
+    - FaceMash algorithm from Social network movie.
+    - |
+      <p>Hi All, I saw social network movie and next day when I was discussing this movie with few of my colleagues we were thinking about the algorithm which Mark had taken from one of his friend who use it for Chess game. If you have seen that movie you will surely remember that scene. No body among us was sure what was that algorithm and how does it help in matching girls!&nbsp;<!--more--> I thought I must search that and found some good points about that. Facemash is an algorithm which is actually based on another algorithm called <a href="http://en.wikipedia.org/wiki/Elo_rating_system">Elo Rating System</a>. Wiki says:</p>
+      
+      <blockquote>The Elo rating system is a method for calculating the relative skill levels of players in two-player games such as chess. It is named after its creator Arpad Elo, a Hungarian-born American physics professor</blockquote>
+      
+      <p><strong>Algorithm:</strong> Now according to this algorithm following repersents the expected score of Player A</p>
+      
+      <p><img alt="E_A = \frac 1 {1 + 10^{(R_B - R_A)/400}}." src="http://upload.wikimedia.org/math/b/0/3/b0366725c224ee55eab6e2371dc6a0ef.png" /></p>
+      
+      <p>Similarly the expected score for Player B is</p>
+      
+      <p><img alt="E_B = \frac 1 {1 + 10^{(R_A - R_B)/400}}." src="http://upload.wikimedia.org/math/9/6/a/96a818972fe2bc94e9b3e0e6115ba232.png" /></p>
+      
+      <p>Where <em>R</em><em>A </em>is current rating of Player A and <em>R</em><em>B </em>is current rating of player B. When player A will play the match what ever score he will have will be compared with the expected score and that will give a new rating for player A. This will be done using the below formula; <img alt="R_A^\prime = R_A + K(S_A - E_A)." src="http://upload.wikimedia.org/math/2/3/f/23fbcb658ac1e2565003c2190f28a21e.png" /> Where <em>S</em><em>A </em>is the actual score of player A. K is a constant that has two values for Master players K=16 and for weaker players K will be 32. Now let us take an ecample of rating girls as done in the Social Network movie. For example we have the following table:</p>
+      
+      <table class="table">
+      	<tbody>
+      		<tr>
+      			<th style="text-align:center"><strong>Girl</strong></th>
+      			<th style="text-align:center"><strong>Current Rating</strong></th>
+      			<th style="text-align:center"><strong>Result</strong></th>
+      			<th style="text-align:center"><strong>Score</strong></th>
+      		</tr>
+      		<tr>
+      			<td>A</td>
+      			<td>80</td>
+      			<td>&nbsp;</td>
+      			<td>&nbsp;</td>
+      		</tr>
+      		<tr>
+      			<td>B</td>
+      			<td>90</td>
+      			<td>Lost</td>
+      			<td>0</td>
+      		</tr>
+      		<tr>
+      			<td>C</td>
+      			<td>30</td>
+      			<td>Won</td>
+      			<td>1</td>
+      		</tr>
+      		<tr>
+      			<td>D</td>
+      			<td>50</td>
+      			<td>Draw</td>
+      			<td>0.5</td>
+      		</tr>
+      		<tr>
+      			<td>E</td>
+      			<td>40</td>
+      			<td>Won</td>
+      			<td>1</td>
+      		</tr>
+      	</tbody>
+      </table>
+      
+      <p>Now as you can clearly see that A was comapred with 4 girls and she has scored 2.5 points. If you calculate the Expected score using the above formula it will be</p>
+      
+      <blockquote>2.157(0.485+0.572+0.543+0.557).</blockquote>
+      
+      <p>Now using the second formula given above we will calculate the new Rating for player A&nbsp; using K = 16&nbsp; will be</p>
+      
+      <blockquote><em>R&#39;</em><em>A </em>= 80 + 16(2.5-2.157) = 85.2</blockquote>
+      
+      <p>So this was all about that algorithm. This is widely used in games like football etc. I hope you guys will like it I will be waiting for your comments :)</p>
+
+    - 2013-10-06 06:10:00.000000
+    - 2013-10-06 06:11:38.257231
+    - 2013-10-06 06:11:38.257231
+  - - 13
+    - Improve your Front end skills
+    - |
+      <p>There are many thing in this. I will put it in some points. Again this is my opinion and what I have seen from my experience:<br />
+      <br />
+      &nbsp;</p>
+      
+      <ol>
+      	<li>First of all the most important thing is no matter what you decide in terms of using patterns, code style. It has to be something that you team is doing together. If required document it. So that even if a new developer will join things will still go in same way.</li>
+      	<li>Define a Style guide for your project. Google has one for JavaScript&nbsp;<a href="https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml" target="_blank">Page on googlecode.com</a>&nbsp;. Addy osmani has one awesome blog on that&nbsp;<a href="http://addyosmani.com/blog/javascript-style-guides-and-beautifiers/" target="_blank">JavaScript Style Guides And Beautifiers</a>. Read it with team discuss it and come up with something that works best for your team.</li>
+      	<li>There are some Great books from Addy Osmani about Design patterns in JavaScript applications:&nbsp;&nbsp;&nbsp;<a href="http://addyosmani.com/resources/essentialjsdesignpatterns/book/" target="_blank">Learning JavaScript Design Patterns</a>&nbsp;and&nbsp;&nbsp;<a href="http://addyosmani.com/largescalejavascript/" target="_blank">Patterns For Large-Scale JavaScript Application Architecture</a>. They give a great idea.</li>
+      	<li>Best approach to write maintainable code in JavaScript is to write modular code. Again Addy Osmani hits best with his book&nbsp;<a href="http://addyosmani.com/writing-modular-js/" target="_blank">Writing Modular JavaScript With AMD, CommonJS &amp; ES Harmony</a>&nbsp;(All these books are free online :) )</li>
+      	<li>There is no way you are going to have productivity if people who are working on project don&#39;t know much of JavaScript. I would suggest reading couple of books as a team or individuals:&nbsp;<a href="http://www.amazon.com/Maintainable-JavaScript-Nicholas-C-Zakas/dp/1449327680" target="_blank">Maintainable JavaScript: Nicholas C. Zakas: 9781449327682: Amazon.com: Books</a>&nbsp;,&nbsp;&nbsp;<a href="http://www.amazon.com/Testable-JavaScript-Mark-Ethan-Trostler/dp/1449323391/ref=pd_sim_b_1?ie=UTF8&amp;refRID=07JARDHK1738WDEAF08K" target="_blank">Testable JavaScript: Mark Ethan Trostler: 9781449323394: Amazon.com: Books</a>&nbsp;and&nbsp;<a href="http://www.amazon.com/Performance-JavaScript-Faster-Application-Interfaces/dp/059680279X/ref=pd_sim_b_4?ie=UTF8&amp;refRID=07JARDHK1738WDEAF08K" target="_blank">High Performance JavaScript (Build Faster Web Application Interfaces): Nicholas C. Zakas: 9780596802790: Amazon.com: Books</a></li>
+      	<li>Regarding your concern of having so many callbacks. Use Promises. Its super easy to build Promises. They are natively coming to JavaScript in ECMAScript 6.&nbsp; Here are couple of tutorials that I used:&nbsp;&nbsp;<a href="http://www.slideshare.net/xmlilley/mastering-async-io-in-javascript-promises-async-190913" target="_blank">Promises, Promises: Mastering Async I/O in Javascript with the Prom...</a>&nbsp;and&nbsp;&nbsp;<a href="http://www.slideshare.net/domenicdenicola/callbacks-promises-and-coroutines-oh-my-the-evolution-of-asynchronicity-in-javascript" target="_blank">Callbacks, Promises, and Coroutines (oh my!): Asynchronous Programm...</a></li>
+      	<li>One thing which is very very important is using some automation tools that can help you in getting immediate feedback in terms of bugs and bad code. I personally Love Grunt&nbsp;<a href="http://gruntjs.com/" target="_blank">The JavaScript Task Runner</a>&nbsp;but use it through Yeoman<a href="http://yeoman.io/" target="_blank">Modern workflows for modern web apps</a>. Its simply awesome.</li>
+      	<li>Use something like JSHint or JSLint with Grunt to get immediate feedback for your JavaScript code.</li>
+      	<li>I use sublime as editor I have installed jslint plugin in sublime. So that I can lint my files while I am writing code.</li>
+      	<li>One more thing which is very very important is wring tests for your JavaScript. No matter what design pattern you use how good your code is you will have bugs. Writing tests is best way to find bugs.</li>
+      	<li>Another important thing which most of the people don&#39;t agree is having same set of environment for each developer. Try to use same tools for your project. We generally keep a iso image for our dev machine somewhere. Whenever somebody new joins project he will install from that iso machine. Which already includes all the required tools. But if you don&#39;t wanna do this. Grunt helps you to solve this issue.</li>
+      </ol>
+      
+      <p><br />
+      Again this is just opinion. Feel free to discuss with your team. Share knowledge. These things take time. You can not read a blog or a book to change projects. It is a process and you have to go through it. You will fail many times and you will have arguments but that is what makes it interesting. I hope I have tried to answer your questions.</p>
+
+    - 2014-04-06 07:34:00.000000
+    - 2014-04-06 07:35:16.251347
+    - 2014-04-06 07:35:16.251347
+  - - 14
+    - How do I become better at Javascript?
+    - |
+      <p>I had similar questions about 2 years ago. I would like to write what I have done to improve my skills not only JavaScript but as a programmer.<br />
+      <br />
+      &nbsp;</p>
+      
+      <ul>
+      	<li>I have read couple of books. I personally believe that reading a book is completely different experience and it helps you to understand a lot of concepts that you do not find on blogs and article online. Some of my fav books are:&nbsp;</li>
+      	<li>
+      	<ul>
+      		<li><strong>Professional javascript for web developers</strong></li>
+      		<li><strong>Secrets of JavaScript Ninja</strong></li>
+      		<li><strong>High Performance JavaScript</strong></li>
+      		<li><strong>JavaScript Good Parts</strong></li>
+      	</ul>
+      	</li>
+      	<li>Then I subscribed to couple of channels on youtube. Like&nbsp;<strong>jsconf</strong>. You get to learn a lot about what is new coming up in JavaScript.&nbsp; I drive almost 1 hour a day I listen to these channels or some podcasts. You may not be able to understand completely but you get some idea. I was able to utilize my time while driving.</li>
+      	<li>I am following a lot of people on&nbsp;<strong>twitter</strong>&nbsp;who have written book on JavaScript or have written libraries. It helps a lot. Whenever they write a new article they tweet it. Twitter is a great way of knowledge sharing.</li>
+      	<li>Then I started reading how browser works.&nbsp;<strong>HTML5Rocks</strong>&nbsp;has some great articles on how browsers work. It is very important to know. It helped me a lot in writing good fast and reliable javascript. You can see few good resources here&nbsp;<a href="http://updates.html5rocks.com/2012/04/Round-up-of-Web-Browser-Internals-Resources" target="_blank"><strong>Round-up of Web Browser Internals Resources</strong></a></li>
+      	<li>I also joined&nbsp;<strong>local javascript community</strong>. It helped me a lot because I was able to collaborate with other JavaScript people. I was able to contribute in some of the open sources.</li>
+      	<li>I love reading others code and try to think if I can make it better. I fork open source code on&nbsp;<strong>github</strong>&nbsp;and try to read the code and understand. I started with very small JS libraries. I loved it.</li>
+      	<li>I Joined&nbsp;<strong>Code triage</strong>&nbsp;and subscribe to js libraries that I like.I get notifications about new bugs that are reported on github. If I can solve it I create a new branch and try to solve it. It helps a lot.</li>
+      	<li>I started giving trainings within my team and local JavaScript community. I started writing blog about JavaScript.<strong>&nbsp;Knowledge sharing</strong>&nbsp;is very very important.</li>
+      	<li>I also started going to forums and try to see if I can answer anything there.</li>
+      </ul>
+      
+      <p>There are many many ways you can improve your skills. I would also suggest you to read this article<strong>&nbsp;</strong><a href="http://rmurphey.com/blog/2012/04/12/a-baseline-for-front-end-developers/" target="_blank"><strong>Adventures in JavaScript Development</strong></a>&nbsp;. In the article there is a link to some test driven js assessment. Try to do that it will help you a lot. I hope my answer will help you. One more thing&nbsp;<strong>Love JavaScript&nbsp;</strong>and have faith in it :).</p>
+
+    - 2014-04-06 07:36:00.000000
+    - 2014-04-06 07:36:58.330858
+    - 2014-04-06 07:37:11.860035

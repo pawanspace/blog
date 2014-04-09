@@ -2,11 +2,16 @@
 <html>
 <head>
   <title>Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <%= stylesheet_link_tag :all %>
   <%= stylesheet_link_tag "/bootstrap/css/bootstrap.css" %>
   <%= stylesheet_link_tag "/bootstrap/css/bootstrap-theme.css" %>
   <%= stylesheet_link_tag "/stylesheets/carousel.css" %>
+  
+  <%= stylesheet_link_tag "/stylesheets/highlighter/shThemeEclipse.css" %>
   <%= csrf_meta_tag %>
+
   <style type="text/css">
 
 
@@ -19,11 +24,16 @@
 		<%= yield %>
 	</div>
 </div>
-  <%= javascript_include_tag "/javascripts/ckeditor/ckeditor.js" %>
+ <%= javascript_include_tag "/javascripts/ckeditor/ckeditor.js" %> 
   <%= javascript_include_tag "/javascripts/jquery.js" %>
   <%= javascript_include_tag "/javascripts/underscore.js" %>
   <%= javascript_include_tag "/javascripts/header.js" %>
   <%= javascript_include_tag "/bootstrap/js/bootstrap.js" %>
   <%= javascript_include_tag :defaults %>
+   <%= javascript_include_tag "/javascripts/highlighter/shCore.js"%>
+   <%= javascript_include_tag "/javascripts/highlighter/shBrushJScript.js"%>
+   <%= javascript_include_tag "/javascripts/highlighter/shBrushJava.js"%>
+   <%= javascript_include_tag "/javascripts/highlighter/shBrushXml.js"%>
+
 </body>
 </html>

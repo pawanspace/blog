@@ -5,18 +5,21 @@ window.j = window.jQuery
 
 j(document).ready(function(){
 
-	fillCarouselWithBlogEntries();
+	// fillCarouselWithBlogEntries();
 
-	j(window).scroll(function(){
+	// j(window).scroll(function(){
 
-		if(j(window).scrollTop() === 0){
-			j("#myCarousel").show();
-			return;
-		}
-		j("#myCarousel").hide();
+	// 	if(j(window).scrollTop() === 0){
+	// 		j("#myCarousel").show();
+	// 		return;
+	// 	}
+	// 	j("#myCarousel").hide();
 		
-	});
+	// });
+	 SyntaxHighlighter.all();
 	 CKEDITOR.replace( 'blog_entry_html' );
+
+	
 });
 
 function fillCarouselWithBlogEntries(){
